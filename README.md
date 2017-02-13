@@ -1,6 +1,6 @@
 # Androguard
 
-[![Build Status](https://travis-ci.org/androguard/androguard.svg?branch=master)](https://travis-ci.org/androguard/androguard)
+[![Build Status](https://travis-ci.org/nowsecure/androguard.svg?branch=master)](https://travis-ci.org/nowsecure/androguard)
 
 ## Features
 
