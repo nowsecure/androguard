@@ -5,6 +5,7 @@ python:
 install:
   - "pip install ."
   - "pip install -r requirements.txt"
+  - "pip install -r test_requirements.txt"
 # command to run tests
 script:
   # DEX tests
@@ -23,9 +24,3 @@ script:
   - python androguard/decompiler/dad/tests/dominator_test.py
   - python androguard/decompiler/dad/tests/rpo_test.py
 
-notifications:
-  email:
-    recipients:
-      - desnos@t0t0.fr
-    on_success: always
-    on_failure: always
