@@ -16,8 +16,8 @@ install:
 before_script:
   - git lfs pull
   # get some test apks
-  - git clone https://github.com/nowsecure/test-apks.git examples/NowSecure
-  - cd examples/NowSecure && git lfs pull && du -sh *.apk
+  - git lfs clone https://github.com/nowsecure/test-apks.git examples/NowSecure
+  - du -sh examples/NowSecure/*.apk
 script:
   # DEX tests
   - python tests/test_dex.py
@@ -34,4 +34,7 @@ script:
   - python androguard/decompiler/dad/tests/dataflow_test.py
   - python androguard/decompiler/dad/tests/dominator_test.py
   - python androguard/decompiler/dad/tests/rpo_test.py
+
+  # Extra tests
+  - python tests/test_ns_apk.py
 
