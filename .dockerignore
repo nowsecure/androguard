@@ -1,4 +1,7 @@
 *.egg-info
 build
+demos
 dist
 elsim
+examples
+test
