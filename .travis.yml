@@ -35,3 +35,6 @@ script:
   - python androguard/decompiler/dad/tests/dominator_test.py
   - python androguard/decompiler/dad/tests/rpo_test.py
 
+  # Extra tests
+  - python tests/test_ns_apk.py
+
