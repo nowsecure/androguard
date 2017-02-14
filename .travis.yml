@@ -17,6 +17,7 @@ before_script:
   - git lfs pull
   # get some test apks
   - git clone https://github.com/nowsecure/test-apks.git examples/NowSecure
+  - cd examples/NowSecure && git lfs pull
   - du -sh examples/NowSecure/*
 script:
   # DEX tests
